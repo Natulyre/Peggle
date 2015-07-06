@@ -3,16 +3,16 @@
 #include "ResourceIDs.h"
 #include "Sprite.h"
 
-class Eyes :
+class Star :
 	public Sprite
 {
 public:
-	Eyes();
-	~Eyes();
+	Star(float x, float y);
+	~Star();
 
 	void Update();
-	void Blink();
+	void Shine();
 	float mTimer;
-	bool isBlinking;
+	bool isShining;
 };
 

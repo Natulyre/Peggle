@@ -7,6 +7,8 @@ int WINAPI _tWinMain(HINSTANCE hInstance,
 	HINSTANCE prevHInstance,
 	LPTSTR cmd, int showCmd)
 {
+	srand(time(NULL));
+
 	Engine* engine = new Engine(hInstance, "SpriteApp");
 	gEngine = engine;
 

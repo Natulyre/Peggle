@@ -2,6 +2,8 @@
 
 #include "ResourceIDs.h"
 #include "Sprite.h"
+#include "Utils.h"
+#include "CRectangle.h"
 
 class Basket :
 	public Sprite
@@ -11,5 +13,10 @@ public:
 	~Basket();
 
 	void Update();
+	void SetActive(bool toggle);
+
+private:
+	D3DXVECTOR2 mVelocity;
+	CRectangle* mCollider;
 };
 
